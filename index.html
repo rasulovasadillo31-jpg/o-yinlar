@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mini O’yinlar</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="max-w-3xl mx-auto px-4 py-5">
+  <header class="flex items-center justify-between mb-5">
+    <h1 class="logo">🕹️ Mini <span style="color:var(--ac)">O’yinlar</span></h1>
+    <div class="flex gap-2"><button id="snd" class="btn2" title="Tovush">🔊</button><button id="thm" class="btn2" title="Rejim">🌓</button></div>
+  </header>
+
+  <section id="home"><div class="hero"><h2 class="text-xl font-black">O’yin tanlang va o’ynang! 🎮</h2><p>Klassik arcade o’yinlari bir joyda</p></div><div id="grid" class="grid grid-cols-2 sm:grid-cols-3 gap-4"></div>
+    <p class="text-center mt-6 text-sm" style="color:var(--mut)">Strelkalar yoki WASD, probel va P (pauza). Telefonda barmoq bilan suring.</p></section>
+
+  <section id="play" class="hidden">
+    <div class="flex items-center justify-between mb-3 gap-2 flex-wrap">
+      <button id="back" class="btn2">← Menyu</button>
+      <div class="font-black" id="gt"></div>
+      <div class="hud"><div class="pill"><small>BALL</small><b id="sc">0</b></div><div class="pill"><small>REKORD</small><b id="bs">0</b></div></div>
+    </div>
+    <div class="flex gap-2 justify-center mb-3"><button id="pz" class="btn2">⏸ Pauza</button><button id="rs" class="btn">↻ Qayta</button></div>
+    <div id="stage"></div>
+    <div class="pad" id="pad"><span></span><button data-k="up">▲</button><span></span><button data-k="left">◀</button><button data-k="act">⟳</button><button data-k="right">▶</button><span></span><button data-k="down">▼</button><span></span></div>
+  </section>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
